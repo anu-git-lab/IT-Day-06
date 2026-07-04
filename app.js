@@ -67,20 +67,62 @@
 
 // document.write("<h1>Hello, World!</h1>");
 
-console.log(document.title);
+// console.log(document.title);
 
-let heading = document.getElementById("heading");
-// console.log(heading);
+// let heading = document.getElementById("heading");
+// // console.log(heading);
 
-heading.innerHTML = "Hello, JavaScript!";
+// heading.innerHTML = "Hello, JavaScript!";
 
-let number = 0;
-function changeHeading() {
-    heading.innerText = "Button Clicked!" +(++number);
-    console.log("clicked!");
+// let number = 0;
+// function changeHeading() {
+//     heading.innerText = "Button Clicked!" +(++number);
+//     console.log("clicked!");
+// }
+
+// function changeHeading2() {
+//     heading.innerText = "Button Clicked!" +(--number);
+//     console.log("clicked!");
+// }
+
+// function changeHeading() {
+//     let txtinput = document.getElementById("inputText01");
+//     console.log(txtinput.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = txtinput.value;
+// }
+
+// function changeHeading() {
+
+//     let txtInput = document.getElementById("inputText");
+
+//     let userInput = txtInput.value; 
+
+//     console.log(userInput);
+    
+//     let heading = document.getElementById("heading");
+
+//     heading.innerText=userInput;   
+// }
+
+    function changeHeading() {
+    let txtinput = document.getElementById("inputText01");
+    console.log(txtinput.value);
+
+    let heading = document.getElementById("heading");
+    heading.innerText = txtinput.value;
 }
 
-function changeHeading2() {
-    heading.innerText = "Button Clicked!" +(--number);
-    console.log("clicked!");
+    function addNumbers() {
+    let num1 = Number(document.getElementById("inputText01").value);
+    let num2 = Number(document.getElementById("inputText02").value);
+
+    document.getElementById("heading").innerText = num1 + num2;
+}
+
+function subtractNumbers() {
+    let num1 = Number(document.getElementById("inputText01").value);
+    let num2 = Number(document.getElementById("inputText02").value);
+
+    document.getElementById("heading").innerText = num1 - num2;
 }
